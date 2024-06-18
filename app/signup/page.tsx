@@ -17,7 +17,6 @@ export default function SignupPage(){
     const [buttonDisable,setButtonDisabled]=React.useState(false)
     const [loading,setLoading]=useState(false)
     const onSignup=async ()=>{
-        console.log("d")
         try {
             setLoading(true)
             const response=await axios.post('/api/users/signup',user)
